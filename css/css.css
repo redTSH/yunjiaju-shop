@@ -1,0 +1,600 @@
+/* 顶部电话 */
+.site-top {
+    min-width: 1200px;
+}
+.site-top .top-bar {
+    height: 40px;
+    background-color: #0058aa;
+}
+.site-top .top-bar .center-wrap p {
+    float: right;
+    font-size: 18;
+    line-height: 40px;
+    color: #fff;
+}
+/* 头部导航区 */
+.site-top .top-main {
+    height: 121px;
+}
+.site-top .top-main .center-wrap {
+    padding-top: 19px;
+}
+.site-top .top-main .center-wrap .logo {
+    display: block;
+    float: left;
+    width: 192px;
+    height: 91px;
+    background-image: url(../images/logo.png);
+    margin-right: 48px;
+}
+.site-top .top-main .center-wrap .logo h2 {
+    position: relative;
+    left: -9999px;
+}
+.site-top .top-main .center-wrap .top-nav {
+    float: left;
+    width: 625px;
+    height: 91px;
+}
+.site-top .top-main .center-wrap .top-nav ul li {
+    float: left;
+    margin-left: 61px;
+}
+.site-top .top-main .center-wrap .top-nav ul li a {
+    display: block;
+    position: relative;
+    width: 64px;
+    height: 21px;
+    padding-top: 70px;
+}
+.site-top .top-main .center-wrap .top-nav ul li a p {
+    height: 21px;
+    line-height: 21px;
+    text-align: center;
+    font-size: 16px;
+    color: #545454;
+}
+.site-top .top-main .center-wrap .top-nav ul li a .pic {
+    position: absolute;
+    top: 0;
+    left: 7px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+/* 导航图标 */
+.site-top .top-main .center-wrap .top-nav ul li a .pic::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-image: url(../images/icon1.png);
+}
+.site-top .top-main .center-wrap .top-nav ul li a.nav-index .pic::before {
+    width: 32px;
+    height: 30px;
+    margin-left: -16px;
+    margin-top: -15px;
+    background-position: -12px -12px;
+}
+.site-top .top-main .center-wrap .top-nav ul li a.nav-about .pic::before {
+    width: 33px;
+    height: 26px;
+    margin-left: -16.5px;
+    margin-top: -13px;
+    background-position: -11px -59px;
+}
+.site-top .top-main .center-wrap .top-nav ul li a.nav-advice .pic::before {
+    width: 27px;
+    height: 30px;
+    margin-left: -13.5px;
+    margin-top: -15px;
+    background-position: -15px -101px;
+}
+.site-top .top-main .center-wrap .top-nav ul li a.nav-product .pic::before {
+    width: 28px;
+    height: 27px;
+    margin-left: -14px;
+    margin-top: -13.5px;
+    background-position: -14px -145px;
+}
+.site-top .top-main .center-wrap .top-nav ul li a.nav-service .pic::before {
+    width: 31px;
+    height: 30px;
+    margin-left: -15.5px;
+    margin-top: -15px;
+    background-position: -13px -184px;
+}
+/* 导航划入动画 */
+.site-top .top-main .center-wrap .top-nav ul li:hover .pic {
+    background-color: #0058aa;
+    transform: scale(1.1);
+    animation: bigger .8s ease 0s alternate infinite;
+}
+@keyframes bigger {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+.site-top .top-main .center-wrap .top-nav ul li:hover a .pic::before {
+    background-position-x: -70px;
+}
+.site-top .top-main .center-wrap .search-tool {
+    float: right;
+    height: 39px;
+    margin-top: 32px;
+}
+.site-top .top-main .center-wrap .search-tool input {
+    float: left;
+    width: 213px;
+    height: 37px;
+    border: 1px solid #d3d3d3;
+    border-right: none;
+    outline: none;
+    padding-left: 15px;
+    font-size: 14px;
+}
+.site-top .top-main .center-wrap .search-tool .btn {
+    float: left;
+    display: block;
+    width: 48px;
+    height: 39px;
+    background-color: #0058aa;
+    background-image: url(../images/icon1.png);
+    background-position: -9px -224px;
+}
+/* banner模块 */
+.banner {
+    width: 100%;
+    position: relative;
+    min-width: 1200px;
+    overflow: hidden;
+}
+.banner .carousel {
+    width: 400%;
+    overflow: hidden;
+    transition: transform .5s ease 0s;
+}
+.banner .carousel li {
+    float: left;
+    width: 25%;
+}
+.banner .carousel li img {
+    width: 100%;
+    display: block;
+}
+/* .banner img {
+    display: block;
+    width: 100%;
+    min-width: 1200px;
+} */
+.banner .center-wrap {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -600px;
+    height: 100%;
+    min-width: 1200px;
+}
+/* 小圆点 */
+.banner .center-wrap .circle {
+    position: absolute;
+    left: 50%;
+    bottom: 7.7%;
+    margin-left: -21px;
+}
+.banner .center-wrap .circle ul li {
+    float: left;  
+    margin-right: 6px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+}
+.banner .center-wrap .circle ul li.current  {
+    background-color: #0058aa;
+}
+/* 商品模块 */
+.goods {
+    height: 304px;
+}
+.goods .center-wrap {
+    position: relative;
+}
+.goods .center-wrap .good_field {
+    position: relative;
+    width: 1055px;
+    height: 304px;
+    margin-left: 73px;
+    overflow: hidden;
+}
+.goods .center-wrap ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2300px;
+    transition: left .5s ease 0s;
+}
+.goods .center-wrap ul li {
+    float: left;
+    width: 171px;
+    height: 272px;
+    margin-right: 50px;
+    padding-top: 38.3px;
+    box-sizing: border-box;
+}
+.goods .center-wrap ul li .picbox img {
+    display: block;
+    width: 171px;
+    height: 175.7px;
+}
+.goods .center-wrap ul li .wordbox {
+    padding-top: 10px;
+    font-size: 18px;
+    color: #838383;
+}
+/* 左右按钮 */
+/* 提取按钮样式为公共样式 */
+.common-btn .btn {
+    position: absolute;
+    top: 136px;
+    width: 48px;
+    height: 48px;
+    background-image: url(../images/icon1.png);
+}
+.common-btn .leftbtn {
+    left: 0;
+    background-position: -117.5px -7px;
+}
+.common-btn .rightbtn {
+    right: 0;
+    background-position: -117.5px -71px;
+}
+.common-btn .btn:hover {
+    background-position-x: -172.5px;
+}
+/* 内容模块公共标题样式 */
+.common-title h2.title-cn {
+    height: 42px;
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+    color: #696868;
+    margin-bottom: 2px;
+}
+.common-title p.title-en {
+    height: 24px;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #9b9b9b;
+}
+.common-title span.decro {
+    display: block;
+    width: 93px;
+    height: 3px;
+    background-color: #0058aa;
+    margin: 11px auto 0;
+}
+/* 公共标题装饰线 */
+.decro-line .title {
+    position: relative;
+}
+.decro-line .title::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 22.5px;
+    top: 42px;
+    width: 500px;
+    height: 2px;
+    background-color: #808080;
+}
+.decro-line .title::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 22.5px;
+    top: 42px;
+    width: 500px;
+    height: 2px;
+    background-color: #808080;
+}
+/* 了解我们模块 */
+.know-more {
+    height: 456px;
+}
+.know-more .center-wrap .content {
+    padding-top: 36px;
+}
+.know-more .center-wrap .content .wordbox {
+    float: left;
+    width: 238px;
+    height: 242px;
+    margin: 0 147px 0 22.5px;
+}
+.know-more .center-wrap .content .wordbox h3 {
+    text-align: left;
+    font-size: 26px;
+    color: #0058aa;
+    line-height: 34px;
+}
+.know-more .center-wrap .content .wordbox p.subtitle {
+    font-size: 21px;
+    line-height: 41px;
+    color: #5a5a5a;
+}
+.know-more .center-wrap .content .wordbox .word-decro {
+    display: block;
+    width: 142px;
+    height: 4px;
+    background-color: #0058aa;
+}
+.know-more .center-wrap .content .wordbox p.main-text {
+    width: 238px;
+    height: 78px;
+    padding-top: 24px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #7b7c7c;
+}
+.know-more .center-wrap .content .wordbox .more-btn {
+    display: block;
+    width: 130px;
+    height: 38px;
+    background-color: #0058aa;
+    font-size: 18px;
+    color: #fff;
+    line-height: 38px;
+    text-align: center;
+    margin-top: 27px;
+}
+/* 按钮动画 */
+.know-more .center-wrap .content .wordbox .more-btn:hover {
+    animation: btn-circle .4s linear 0s alternate infinite;
+}
+@keyframes btn-circle {
+    from {
+        transform: rotate(10deg);
+    }
+    to {
+        transform: rotate(-10deg);
+    }
+}
+.know-more .center-wrap .content .picbox {
+    float: left;
+    overflow: hidden;
+}
+.know-more .center-wrap .content .picbox img {
+    display: block;
+    width: 384px;
+    height: 256px;
+    transform: scale(1);
+    transition: transform .4s ease 0s;
+}
+/* 鼠标划入图片放大特效 */
+.know-more .center-wrap .content .picbox:hover img {
+    transform: scale(1.1);
+}
+.know-more .center-wrap .content .aside {
+    float: left;
+    width: 273px;
+    height: 213px;
+    margin-left: 113px;
+}
+.know-more .center-wrap .content .aside ul li {
+    margin-top: 10px;
+}
+.know-more .center-wrap .content .aside ul li a {
+    position: relative; 
+    display: block;
+    width: 273px;
+    height: 61px;
+    padding-left: 89px;
+    padding-top: 10px;
+    background-color: #ccc;
+    box-sizing: border-box;
+    transition: background-color .8s ease 0s;
+}
+.know-more .center-wrap .content .aside ul li a:hover {
+    background-color: #0058aa;
+}
+.know-more .center-wrap .content .aside ul li a p.cn {
+    font-size: 22px;
+    color: #fff;
+    line-height: 26px;
+}
+.know-more .center-wrap .content .aside ul li a p.en {
+    font-size: 12px;
+    color: #fff;
+    line-height: 14px;
+}
+.know-more .center-wrap .content .aside ul li a::before {
+    content: '';
+    position: absolute;
+    top: 14px;
+    left: 30px;
+    width: 40px;
+    height: 34px;
+    background-image: url(../images/icon1.png);
+}
+.know-more .center-wrap .content .aside ul li.message a::before {
+    background-position: -123px -142px;
+}
+.know-more .center-wrap .content .aside ul li.management a::before {
+    background-position: -122px -181px;
+}
+.know-more .center-wrap .content .aside ul li.consultation a::before {
+    background-position: -120px -227px;
+}
+/* 精品推荐模块 */
+.recommend {
+    height: 590px;
+    background-color: #eff0f4;
+    /* width: 100%; */
+    min-width: 1200px;
+}
+.recommend .center-wrap {
+    position: relative;
+    padding-top: 70px;
+}
+.recommend .center-wrap .title span.decro {
+    margin-top: 16px;
+}
+.recommend .center-wrap .recommend-content {
+    position: relative;
+    margin-top: 40px;
+    margin-left: 57.5px;
+    margin-right: 57.5px;
+    height: 326px;
+    overflow: hidden;
+}
+.recommend .center-wrap .recommend-content ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3400px;
+    height: 326px;
+    transition: left .5s ease 0s;
+}
+.recommend .center-wrap .recommend-content ul li {
+    float: left;
+    margin-right: 25px;
+}
+.recommend .center-wrap .recommend-content ul li a {
+    position: relative;
+    display: block;
+    width: 345px;
+    height: 326px;
+}
+.recommend .center-wrap .recommend-content ul li a img {
+    display: block;
+    width: 345px;
+    height: 326px;
+}
+.recommend .center-wrap .recommend-content ul li a .info {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 325px;
+    height: 45px;
+    background-color: rgba(0,0,0,0.50);
+    color: #fff;
+    font-size: 16px;
+    line-height: 45px;
+    padding-left: 20px;
+}
+/* 左右按钮 */
+.recommend .center-wrap .btn {
+    top: 346px;
+}
+/* 新闻中心模块 */
+.press-center {
+    height: 545px;
+}
+.press-center .center-wrap {
+    padding-top: 82px;
+}
+.press-center .center-wrap .title span.decro {
+    margin-top: 16px;
+}
+.press-center .center-wrap .press-center-content {
+    padding-top: 30px;
+}
+.press-center .center-wrap .press-center-content ul li {
+    float: left;
+    margin-left: 74px;
+    margin-top: 40px;
+}
+.press-center .center-wrap .press-center-content ul li a {
+    position: relative;
+    display: block;
+    width: 400px;
+    height: 109px;
+    padding-left: 103px;
+    color: #4a4a4a;
+}
+.press-center .center-wrap .press-center-content ul li a dl dt {
+    height: 28px;
+    font-size: 21px;
+}
+.press-center .center-wrap .press-center-content ul li a dl dd {
+    height: 69px;
+    font-size: 18px;
+    padding-top: 12px;
+}
+.press-center .center-wrap .press-center-content ul li a dl::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    line-height: 65px;
+    background: url(../images/icon1.png) no-repeat -2px -267px;
+}
+.press-center .center-wrap .press-center-content ul li a dl.bidding::before {
+    content: '01';
+}
+.press-center .center-wrap .press-center-content ul li a dl.daily::before {
+    content: '02';
+}
+.press-center .center-wrap .press-center-content ul li a dl.dict::before {
+    content: '03';
+}
+.press-center .center-wrap .press-center-content ul li a dl.hot::before {
+    content: '04';
+}
+.press-center .center-wrap .press-center-content ul li a:hover dl::before {
+    animation: up-down .4s ease 0s alternate infinite;
+}
+/* 上下移动小特效 */
+@keyframes up-down {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
+/* 底部联系方式模块 */
+footer .contact-part {
+    height: 210px;
+    background-color: #06142f;
+}
+footer .contact-part .center-wrap h3 {
+    float: left;
+    width: 144px;
+    height: 63px;
+    font-size: 48px;
+    text-align: center;
+    line-height: 63px;
+    padding-top: 74px;
+    color: #fff;
+}
+footer .contact-part .center-wrap .contact-ways {
+    float: left;
+    font-size: 16px;
+    color: #fff;
+    line-height: 40px;
+    padding: 53px 0 0 101px;
+}
+/* copyright */
+footer .copyright {
+    min-width: 1200px;
+    height: 30px;
+    background-color: #202c46;
+}
+footer .copyright p {
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+}

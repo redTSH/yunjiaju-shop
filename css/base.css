@@ -1,0 +1,16 @@
+body {
+    font-family: '微软雅黑';
+}
+.clearfix {
+    overflow: hidden;
+}
+.clearfix::after {
+    content: '';
+    display: block;
+    overflow: hidden;
+    clear: both;
+}
+.center-wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
